@@ -69,7 +69,7 @@ function App() {
               <p className='text-[16px] mb-10'>JTC, Jacobian Training College in full is a tutorial centre. At JTC, we have expert in different subjects tutor students in those subjects.</p>
               <p className='text-[16px] mb-8'>Our tutoring method makes it easy for students to achieve academic excellence.</p>
               <Link to="about">
-                <button className='bg-[#000000] w-[100%] md:w-[40%] py-4 px-6 my-4 text-white text-[12.8px] md:text-[16px]'>
+                <button className='bg-[#000000] w-[100%] md:w-[15vw] py-4 px-6 my-4 text-white text-[12.8px] md:text-[16px]'>
                   Find out more
                 </button>
               </Link>
