@@ -6,7 +6,9 @@ import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import ErrorPage from './components/error/ErrorPage';
 import Classes from './components/classes/Classes';
+import About from './components/about/About';
 import Records from './components/records/Records';
+import Enroll from './components/enroll/Enroll';
 
 const router = createBrowserRouter([
   {
@@ -19,8 +21,16 @@ const router = createBrowserRouter([
     element: <Classes />,
   },
   {
+    path: "about",
+    element: <About />,
+  },
+  {
     path: "records",
     element: <Records />,
+  },
+  {
+    path: "enroll",
+    element: <Enroll />,
   }
 ]);
 

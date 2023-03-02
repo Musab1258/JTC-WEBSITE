@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Typewriter from 'typewriter-effect';
 import Footer from './components/footer/Footer';
 import NavBar from './components/nav_bar/NavBar';
@@ -31,9 +32,13 @@ function App() {
           <div>
             <p className='mx-[7vw] md:mx-[30vw] my-8 text-[15.2px] md:text-[22px]'>Then, JTC is the right place for you. At JTC, we will coach you till you excel academically. Our approach to teaching and learning is unique and tailored to help students to learn faster</p>
             
-            <button className='bg-[#000000] py-3 px-16 md:py-4 md:px-12 text-white text-[12.8px] md:text-[16px]'>View Classes</button>
+            <Link to="classes">
+              <button className='bg-[#000000] py-3 px-16 md:py-4 md:px-12 text-white text-[12.8px] md:text-[16px]'>
+                View Classes
+              </button>
+            </Link>
 
-            <p className='mx-[2vw] md:mx-[35vw] bg-white mt-4 mb-8 rounded-full py-2 text-[#000000] font-extrabold text-[11.2px] text-[12.8px]'>Be the best student in your school</p>
+            <p className='mx-[2vw] md:mx-[35vw] bg-white mt-4 mb-8 rounded-full py-2 text-[#000000] font-extrabold text-[11.2px] md:text-[12.8px]'>Be the best student in your school</p>
           </div>
 
           
@@ -63,7 +68,11 @@ function App() {
             <div className='md:w-[50%] md:flex md:flex-col items-start'>
               <p className='text-[16px] mb-10'>JTC, Jacobian Training College in full is a tutorial centre. At JTC, we have expert in different subjects tutor students in those subjects.</p>
               <p className='text-[16px] mb-8'>Our tutoring method makes it easy for students to achieve academic excellence.</p>
-              <button className='bg-[#000000] w-[100%] md:w-[40%] py-4 px-6 my-4 text-white text-[12.8px] md:text-[16px]'>Find out more</button>
+              <Link to="about">
+                <button className='bg-[#000000] w-[100%] md:w-[40%] py-4 px-6 my-4 text-white text-[12.8px] md:text-[16px]'>
+                  Find out more
+                </button>
+              </Link>
             </div>
 
           </div>
@@ -93,8 +102,12 @@ function App() {
 
           <div className='md:w-[40%] mt-10'>
             <p className='text-[24px] md:text-[36px] mb-8'>Want to excell academically? You are in the right place</p>
-            <p className='text-[14.4px] text-[18px] mb-8'>You don't need to be the best student in your school or class to attend JTC, you just need to be dilligent and disciplined.</p>
-            <button className='bg-soft-blue w-[80%] md:w-[70%] py-4 px-12 my-4 text-white text-[12.8px] md:text-[16px]'>View all classes</button>
+            <p className='text-[14.4px] md:text-[18px] mb-8'>You don't need to be the best student in your school or class to attend JTC, you just need to be dilligent and disciplined.</p>
+            <Link to="classes">
+              <button className='bg-soft-blue w-[80%] md:w-[70%] py-4 px-12 my-4 text-white text-[12.8px] md:text-[16px]'>
+                View all classes
+              </button>
+            </Link>
           </div>
 
         </div>
@@ -109,7 +122,11 @@ function App() {
         <div className='absolute z-20 -translate-y-[30rem] md:-translate-y-[30rem] translate-x-[5rem] w-[80%] md:w-[65%] h-[450px] bg-pale-red mx-auto md:ml-64 pt-12 pb-32 px-8 flex flex-col items-start'>
           <p className='mb-8 text-[19.2px] md:text-[24px]'>Prepare yourself for excellence</p>
           <p className='mb-8 text-left text-[16px] md:text-[17.6px]'>Our classes are designed to groom students academically. So, if you want to be on top of your academics</p>
-          <button className='bg-[#000000] py-4 px-20 my-4 text-white text-[12.8px] md:text-[16px]'>Join us now</button>
+          <Link to="enroll">
+            <button className='bg-[#000000] py-4 px-20 my-4 text-white text-[12.8px] md:text-[16px]'>
+                Enroll now
+            </button>
+          </Link>
         </div>
       </div>
 

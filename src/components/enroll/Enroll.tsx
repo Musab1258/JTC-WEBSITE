@@ -2,14 +2,14 @@ import Footer from "../footer/Footer";
 import NavBar from "../nav_bar/NavBar";
 
 
-const Classes = () => {
+const Enroll = () => {
     return (
         <div>
             <NavBar />
-            <div className="pt-[30vh]">Classes</div>
+            <div className="pt-[30vh]">Enroll</div>
             <Footer />
         </div>
     )
 }
 
-export default Classes;
+export default Enroll;

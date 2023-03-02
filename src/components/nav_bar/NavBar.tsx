@@ -28,17 +28,33 @@ const NavBar = () => {
                     </Link>
   
                     <Link
-                      to="classes"
+                      to="/classes"
                       className="text-dark-blue px-3 py-2 rounded-md text-[16px] font-medium"
                     >
                       Classes
                     </Link>
+
                     <Link
-                      to="records"
+                      to="/about"
+                      className="text-dark-blue px-3 py-2 rounded-md text-[16px] font-medium"
+                    >
+                      Our Story
+                    </Link>
+
+                    <Link
+                      to="/records"
                       className="text-dark-blue px-3 py-2 rounded-md text-[16px] font-medium"
                     >
                       Records
                     </Link>
+
+                    <Link
+                      to="/enroll"
+                      className="text-dark-blue px-3 py-2 rounded-md text-[16px] font-medium"
+                    >
+                      Enroll
+                    </Link>
+
                   </div>
                 </div>
               </div>
@@ -100,7 +116,7 @@ const NavBar = () => {
             className="bg-moderate-blue"
           >
             {(ref) => (
-              <div className="h-screen md:hidden" id="mobile-menu">
+              <div className="h-screen md:hidden text-center" id="mobile-menu">
                 <div ref={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                 <Link
                   to="/"
@@ -110,17 +126,31 @@ const NavBar = () => {
                 </Link>
   
                 <Link
-                    to="classes"
+                    to="/classes"
                     className="text-l-gray-orange block px-3 py-2 rounded-md text-[16px] font-medium"
                 >
                     Classes
                 </Link>
 
                 <Link
-                    to="records"
+                    to="/about"
+                    className="text-l-gray-orange block px-3 py-2 rounded-md text-[16px] font-medium"
+                >
+                    Our Story
+                </Link>
+
+                <Link
+                    to="/records"
                     className="text-l-gray-orange px-3 py-2 rounded-md text-[16px] font-medium"
                 >
                     Records
+                </Link>
+
+                <Link
+                    to="/enroll"
+                    className="text-l-gray-orange block px-3 py-2 rounded-md text-[16px] font-medium"
+                >
+                    Enroll
                 </Link>
 
                 </div>
